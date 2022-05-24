@@ -1,5 +1,16 @@
 /** 1. Create a function to calculate the sum of the two given integers. If the two values are the same, 
  return triple their sum.**/
+
+function sumIntegers(number1, number2) {
+  if (number1 === number2) {
+    return (number1 + number2) * 3;
+  } else {
+    return number1 + number2;
+  }
+}
+console.log(sumIntegers(3, 6));
+
+
 /** 2. Create a function to check two given integers. Return true if one of them is 50 or if their sum is 50.**/
 /** 3. Create a function to remove a character at a specified position from a given string: pass the position
 and the string as parameters, return the new string.**/
@@ -40,5 +51,5 @@ If the number does not have 3,5, or 7, return the original number.
 ⚠️ The factor is an integer which evenly divides a number without leaving a remainder. 
 One number can have more than one factor, in that case you should return both names. 
 Ex: 15 has both 3 and 5 has factors: the function will return DiegoRiccardo**/
-/** 19. Create a function that that takes a phrase as a parameter and returns its acronym. 
+/** 19. Create a function that that takes a phrase as a parameter and returns its acronym.
  * Ex. British Broadcasting Corporation returns BBC**/
