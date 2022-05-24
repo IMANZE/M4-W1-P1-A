@@ -32,6 +32,18 @@ function removeCharacter(pos, str) {
 // console.log(removeCharacter(5, "Benjamin!"));
 
 /** 4. Create a function to find and return the largest of three given integers.**/
+
+function largestNumber(number1, number2, number3) {
+    if (number1 > number2 && number1 > number3) {
+      return number1
+    } else if (number2 > number1 && number2 > number3) {
+      return number2
+    } else if (number3 > number1 && number3 > number2) {
+      return number3
+    }
+  }
+//   console.log(largestNumber(17, 20, 1));
+
 /** 5. Create a function to check if two numbers are in the range 40-60 or 70-100. Return true if they do, 
  return false if one (or both) don't.**/
 /** 6. Create a function to create a new string composed of a specified number of copies of a given string. 
