@@ -10,8 +10,17 @@ function sumIntegers(number1, number2) {
 }
 console.log(sumIntegers(3, 6));
 
-
 /** 2. Create a function to check two given integers. Return true if one of them is 50 or if their sum is 50.**/
+
+function checker(int1, int2) {
+  return int1 === 50 || int2 === 50 || int1 + int2 === 50;
+}
+console.log(checker(25, 25));
+
+/**const checkInt = (num1, num2) =>
+  num1 === 50 || num2 === 50 || num1 + num2 === 50;
+console.log(checkInt(50, 30));**/
+
 /** 3. Create a function to remove a character at a specified position from a given string: pass the position
 and the string as parameters, return the new string.**/
 /** 4. Create a function to find and return the largest of three given integers.**/
