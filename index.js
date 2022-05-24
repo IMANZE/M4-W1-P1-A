@@ -8,14 +8,14 @@ function sumIntegers(number1, number2) {
     return number1 + number2;
   }
 }
-console.log(sumIntegers(3, 6));
+// console.log(sumIntegers(3, 6));
 
 /** 2. Create a function to check two given integers. Return true if one of them is 50 or if their sum is 50.**/
 
 function checker(int1, int2) {
   return int1 === 50 || int2 === 50 || int1 + int2 === 50;
 }
-console.log(checker(25, 25));
+// console.log(checker(25, 25));
 
 /**const checkInt = (num1, num2) =>
   num1 === 50 || num2 === 50 || num1 + num2 === 50;
@@ -23,6 +23,14 @@ console.log(checkInt(50, 30));**/
 
 /** 3. Create a function to remove a character at a specified position from a given string: pass the position
 and the string as parameters, return the new string.**/
+
+function removeCharacter(pos, str) {
+    return str.slice(0, pos - 2) + str.slice(pos-1)
+    // the 2nd slice function goes one step further
+  }
+  // const removeCharacter = (pos, str) => str.slice(0, pos) + str.slice(pos+1);
+// console.log(removeCharacter(5, "Benjamin!"));
+
 /** 4. Create a function to find and return the largest of three given integers.**/
 /** 5. Create a function to check if two numbers are in the range 40-60 or 70-100. Return true if they do, 
  return false if one (or both) don't.**/
