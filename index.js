@@ -25,35 +25,35 @@ console.log(checkInt(50, 30));**/
 and the string as parameters, return the new string.**/
 
 function removeCharacter(pos, str) {
-    return str.slice(0, pos - 2) + str.slice(pos-1)
-    // the 2nd slice function goes one step further
-  }
-  // const removeCharacter = (pos, str) => str.slice(0, pos) + str.slice(pos+1);
+  return str.slice(0, pos - 2) + str.slice(pos - 1);
+  // the 2nd slice function goes one step further
+}
+// const removeCharacter = (pos, str) => str.slice(0, pos) + str.slice(pos+1);
 // console.log(removeCharacter(5, "Benjamin!"));
 
 /** 4. Create a function to find and return the largest of three given integers.**/
 
 function largestNumber(number1, number2, number3) {
-    if (number1 > number2 && number1 > number3) {
-      return number1
-    } else if (number2 > number1 && number2 > number3) {
-      return number2
-    } else if (number3 > number1 && number3 > number2) {
-      return number3
-    }
+  if (number1 > number2 && number1 > number3) {
+    return number1;
+  } else if (number2 > number1 && number2 > number3) {
+    return number2;
+  } else if (number3 > number1 && number3 > number2) {
+    return number3;
   }
+}
 //   console.log(largestNumber(17, 20, 1));
 
 /** 5. Create a function to check if two numbers are in the range 40-60 or 70-100. Return true if they do, 
  return false if one (or both) don't.**/
 
- function rangeChecker(numb1, numb2) {
+function rangeChecker(numb1, numb2) {
   if (numb1 >= 40 && numb1 <= 60 && numb2 >= 40 && numb2 <= 60) {
-    return "present in  range 40 - 60"
+    return "present in  range 40 - 60";
   } else if (numb1 >= 70 && numb1 <= 100 && numb2 >= 70 && numb2 <= 100) {
-    return "present in range 70 - 100"
+    return "present in range 70 - 100";
   } else {
-    return "does not exist in range"
+    return "does not exist in range";
   }
 }
 // console.log(rangeChecker(72,89));
@@ -61,7 +61,7 @@ function largestNumber(number1, number2, number3) {
 /** 6. Create a function to create a new string composed of a specified number of copies of a given string. 
  Pass the string and the number of copies as parameters.**/
 
- const copiesCreator = (str, num) => {
+const copiesCreator = (str, num) => {
   let newString = "";
   for (let i = 0; i < num; i++) {
     newString += str + " ";
