@@ -89,6 +89,16 @@ function beginsWith(str) {
 
 /** 8. Create a function to calculate and return the sum of all elements from an array with 3 elements. 
  Pass the array as a parameter.**/
+
+function sumCalculator(array) {
+  let sum = 0;
+  for (let index = 0; index < array.length; index++) {
+    sum += array[index];
+  }
+  return sum;
+}
+// console.log(sumCalculator([9, 10, 228]));
+
 /** 9. Create a function to test if an array of length 2 contains 1 OR 3. Return true is 
  it does, false if it doesn't.**/
 /** 10. Create a function to test if an array of length 2 DOES NOT contain 1 or 3. 
