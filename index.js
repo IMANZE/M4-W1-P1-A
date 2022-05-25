@@ -132,10 +132,23 @@ function typeOfAngle(angle) {
     return "angle range not included here!";
   }
 }
-// console.log(typeOfAngle(70));
+
+// const typeOfAngle = (angle) =>
+//   angle < 90
+//     ? "acute angle"
+//     : angle === 90
+//     ? "right angle"
+//     : angle < 180
+//     ? "obtuse angle"
+//     : angle === 180
+//     ? "straight angle"
+//     : "angle range not included here!";
+
+// console.log(typeOfAngle(180));
 
 /** 13. Create a function to find and return the index of the greatest element of a given array of integers that 
  you passed as a parameter**/
+
 /** 14. Create a function to find and return the largest even number from an array of integers that is passed a parameter.**/
 /** 15. Create a function to check from two given integers (passed as parameters) if one is positive and the other is negative. 
  Return true if that's the case, return false if it's not.**/
