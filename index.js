@@ -107,6 +107,10 @@ const numIncluded = (arr) => arr.includes(1) || arr.includes(3);
 
 /** 10. Create a function to test if an array of length 2 DOES NOT contain 1 or 3. 
  Return true if it doesn't, false if it does.**/
+
+const numNotIncluded = (arr) => !numIncluded(arr);
+// console.log(numNotIncluded([4, 5]));
+
 /** 11. Create a function to find the longest string from a given array of strings. Pass the array as 
 parameter and return the longest string.**/
 /** 12. Create a function to find the types of a given angle:
