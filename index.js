@@ -164,6 +164,22 @@ function typeOfAngle(angle) {
 // console.log(findLargeNumIndex([50, 400, 1100]));
 
 /** 14. Create a function to find and return the largest even number from an array of integers that is passed a parameter.**/
+
+function largestEven(arr) {
+  let evenNum = []
+ for (let i = 0; i < arr.length; i++) {
+    let num = arr[i]
+
+    if (num % 2 === 0) {
+      evenNum.push(num)
+    }
+  }
+  const largeNumIndex = findLargeNumIndex(arr)
+
+  return evenNum[largeNumIndex]
+}
+console.log(largestEven([80, 90,  30, 5, 6, 3, 1,]));
+
 /** 15. Create a function to check from two given integers (passed as parameters) if one is positive and the other is negative. 
  Return true if that's the case, return false if it's not.**/
 /** 16. Create a function to create and return a new string where the first 3 characters are in lower case and the others 
