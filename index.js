@@ -203,6 +203,18 @@ function stringConverter(str) {
 
 /** 17. Create a function to calculate the sum of two integers (passed as parameters). If the sum is in the 50-80 range, return 65, 
  otherwise, return 80.**/
+
+function checkSumRange(a, b) {
+  let sum = a + b;
+  if (sum >= 50 && sum <= 80) {
+    return 65;
+  } else {
+    return 80;
+  }
+}
+//  const checkSumRange = (a, b) => (a + b > 50 && a + b < 80 ? 65 : 80);
+console.log(checkSumRange(40, 130));
+
 /** 18. Create a function to convert a number (passed as a parameter) into a string, basing yourself on this example: 
 The number has 3 as a factor ⇒ return Diego 
 The number has 5 as a factor ⇒ return Riccardo 
