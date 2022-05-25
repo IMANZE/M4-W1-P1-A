@@ -101,6 +101,10 @@ function sumCalculator(array) {
 
 /** 9. Create a function to test if an array of length 2 contains 1 OR 3. Return true is 
  it does, false if it doesn't.**/
+const numIncluded = (arr) => arr.includes(1) || arr.includes(3);
+
+// console.log(numIncluded([4, 1]));
+
 /** 10. Create a function to test if an array of length 2 DOES NOT contain 1 or 3. 
  Return true if it doesn't, false if it does.**/
 /** 11. Create a function to find the longest string from a given array of strings. Pass the array as 
