@@ -60,6 +60,16 @@ function largestNumber(number1, number2, number3) {
 
 /** 6. Create a function to create a new string composed of a specified number of copies of a given string. 
  Pass the string and the number of copies as parameters.**/
+
+ const copiesCreator = (str, num) => {
+  let newString = "";
+  for (let i = 0; i < num; i++) {
+    newString += str + " ";
+  }
+  return newString;
+};
+//  console.log(copiesCreator("Benjamin", 4));
+
 /** 7. Create a function to display the city name if the string begins with "Los" or "New". Pass the city name 
  as a parameter. Return false if they start with a different string.**/
 /** 8. Create a function to calculate and return the sum of all elements from an array with 3 elements. 
