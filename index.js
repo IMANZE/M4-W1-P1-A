@@ -213,7 +213,7 @@ function checkSumRange(a, b) {
   }
 }
 //  const checkSumRange = (a, b) => (a + b > 50 && a + b < 80 ? 65 : 80);
-console.log(checkSumRange(40, 130));
+// console.log(checkSumRange(40, 130));
 
 /** 18. Create a function to convert a number (passed as a parameter) into a string, basing yourself on this example: 
 The number has 3 as a factor ⇒ return Diego 
@@ -223,5 +223,18 @@ If the number does not have 3,5, or 7, return the original number.
 ⚠️ The factor is an integer which evenly divides a number without leaving a remainder. 
 One number can have more than one factor, in that case you should return both names. 
 Ex: 15 has both 3 and 5 has factors: the function will return DiegoRiccardo**/
+
+function numberToString(a) {
+  let string = "";
+
+  if (a % 3 !== 0 && a % 7 !== 0 && a % 5 !== 0) return a;
+
+  if (a % 3 === 0) string += "Diego";
+  if (a % 5 === 0) string += "Riccardo";
+  if (a % 7 === 0) string += "Stefano";
+  return string;
+}
+// console.log(numberToString(4));
+
 /** 19. Create a function that that takes a phrase as a parameter and returns its acronym.
  * Ex. British Broadcasting Corporation returns BBC**/
