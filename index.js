@@ -238,3 +238,15 @@ function numberToString(a) {
 
 /** 19. Create a function that that takes a phrase as a parameter and returns its acronym.
  * Ex. British Broadcasting Corporation returns BBC**/
+
+function returnAcronim(str) {
+  let newStrArr = [];
+  let splitted = str.split(" ");
+  for (let i = 0; i < splitted.length; i++) {
+    const letter = splitted[i];
+    newStrArr.push(letter.charAt(0).toUpperCase());
+  }
+  return newStrArr.join("");
+}
+
+// console.log(returnAcronim("i love Ezi"));
