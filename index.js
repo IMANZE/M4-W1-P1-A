@@ -118,6 +118,22 @@ Acute angle ⇒ between 0 and 90 degrees. Return acute.
 Right angle ⇒ 90 degree. Return right
 Obtuse angle ⇒ between 90 and 180. Return obtuse
 Straight angle ⇒ 180 degrees. Return straight**/
+
+function typeOfAngle(angle) {
+  if (angle >= 0 && angle < 90) {
+    return "Acute angle"
+  } else if (angle === 90) {
+    return "Right angle"
+  } else if (angle > 90 && ang < 180) {
+    return "Obtuse angle"
+  } else if (angle === 180) {
+    return "Straight angle"
+  } else {
+    return "angle range not included here!"
+  }
+}
+// console.log(typeOfAngle(70));
+
 /** 13. Create a function to find and return the index of the greatest element of a given array of integers that 
  you passed as a parameter**/
 /** 14. Create a function to find and return the largest even number from an array of integers that is passed a parameter.**/
