@@ -72,6 +72,21 @@ const copiesCreator = (str, num) => {
 
 /** 7. Create a function to display the city name if the string begins with "Los" or "New". Pass the city name 
  as a parameter. Return false if they start with a different string.**/
+
+function beginsWith(str) {
+  let threeCharacters = str.slice(0, 3);
+
+  if (
+    threeCharacters.toLowerCase() === "los" ||
+    threeCharacters.toLowerCase() === "new"
+  ) {
+    return str;
+  } else {
+    return "definitely does not start with Los nor New";
+  }
+}
+// console.log(beginsWith("new york"));
+
 /** 8. Create a function to calculate and return the sum of all elements from an array with 3 elements. 
  Pass the array as a parameter.**/
 /** 9. Create a function to test if an array of length 2 contains 1 OR 3. Return true is 
