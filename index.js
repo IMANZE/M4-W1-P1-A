@@ -121,15 +121,15 @@ Straight angle ⇒ 180 degrees. Return straight**/
 
 function typeOfAngle(angle) {
   if (angle >= 0 && angle < 90) {
-    return "Acute angle"
+    return "Acute angle";
   } else if (angle === 90) {
-    return "Right angle"
+    return "Right angle";
   } else if (angle > 90 && ang < 180) {
-    return "Obtuse angle"
+    return "Obtuse angle";
   } else if (angle === 180) {
-    return "Straight angle"
+    return "Straight angle";
   } else {
-    return "angle range not included here!"
+    return "angle range not included here!";
   }
 }
 // console.log(typeOfAngle(70));
