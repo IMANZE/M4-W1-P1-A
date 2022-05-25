@@ -149,36 +149,36 @@ function typeOfAngle(angle) {
 /** 13. Create a function to find and return the index of the greatest element of a given array of integers that 
  you passed as a parameter**/
 
- function findLargeNumIndex(array) {
-  let greatestNumber = 0
+function findLargeNumIndex(array) {
+  let greatestNumber = 0;
   for (let i = 0; i < array.length; i++) {
-    const currentNumber = array[i]
+    const currentNumber = array[i];
     if (greatestNumber < currentNumber) {
-      greatestNumber = currentNumber
+      greatestNumber = currentNumber;
     }
   }
-//indexOf() returns the first index(position) of any value
-  const numberIndex = array.indexOf(greatestNumber)
-  return numberIndex
+  //indexOf() returns the first index(position) of any value
+  const numberIndex = array.indexOf(greatestNumber);
+  return numberIndex;
 }
 // console.log(findLargeNumIndex([50, 400, 1100]));
 
 /** 14. Create a function to find and return the largest even number from an array of integers that is passed a parameter.**/
 
 function largestEven(arr) {
-  let evenNum = []
- for (let i = 0; i < arr.length; i++) {
-    let num = arr[i]
+  let evenNum = [];
+  for (let i = 0; i < arr.length; i++) {
+    let num = arr[i];
 
     if (num % 2 === 0) {
-      evenNum.push(num)
+      evenNum.push(num);
     }
   }
-  const largeNumIndex = findLargeNumIndex(arr)
+  const largeNumIndex = findLargeNumIndex(arr);
 
-  return evenNum[largeNumIndex]
+  return evenNum[largeNumIndex];
 }
-console.log(largestEven([80, 90,  30, 5, 6, 3, 1,]));
+// console.log(largestEven([80, 90,  30, 5, 6, 3, 1,]));
 
 /** 15. Create a function to check from two given integers (passed as parameters) if one is positive and the other is negative. 
  Return true if that's the case, return false if it's not.**/
