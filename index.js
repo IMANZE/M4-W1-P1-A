@@ -46,6 +46,18 @@ function largestNumber(number1, number2, number3) {
 
 /** 5. Create a function to check if two numbers are in the range 40-60 or 70-100. Return true if they do, 
  return false if one (or both) don't.**/
+
+ function rangeChecker(numb1, numb2) {
+  if (numb1 >= 40 && numb1 <= 60 && numb2 >= 40 && numb2 <= 60) {
+    return "present in  range 40 - 60"
+  } else if (numb1 >= 70 && numb1 <= 100 && numb2 >= 70 && numb2 <= 100) {
+    return "present in range 70 - 100"
+  } else {
+    return "does not exist in range"
+  }
+}
+// console.log(rangeChecker(72,89));
+
 /** 6. Create a function to create a new string composed of a specified number of copies of a given string. 
  Pass the string and the number of copies as parameters.**/
 /** 7. Create a function to display the city name if the string begins with "Los" or "New". Pass the city name 
